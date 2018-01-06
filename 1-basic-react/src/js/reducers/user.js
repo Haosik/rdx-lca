@@ -3,7 +3,7 @@ const initialUser = {
 	age: 35,
 };
 
-export const userReducer = (state = initialUser, action) => {
+export default (state = initialUser, action) => {
     switch (action.type) {
         case "CHANGE_NAME":
             // return { ...state, name: action.payload };

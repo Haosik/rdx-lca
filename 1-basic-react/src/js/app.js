@@ -51,5 +51,6 @@ export default connect(
         onChangeName: (name) => dispatch({ type: 'CHANGE_NAME', payload: name }),
         onChangeAge: (age) => dispatch({ type: 'CHANGE_AGE', payload: age }),
         onAddTweet: (text) => dispatch({ type: 'ADD_TWEET', payload: text }),
-        onErrTweet: () => dispatch({type: 'ERR_TWEET'})
-    }))(App);
+        onErrTweet: () => dispatch({ type: 'ERR_TWEET' })
+    })
+)(App);

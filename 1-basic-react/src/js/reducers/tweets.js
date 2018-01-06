@@ -1,6 +1,6 @@
 const initialTweets = [];
 
-export const tweetsReducer = (state = initialTweets, action) => {
+export default (state = initialTweets, action) => {
     switch (action.type) {
         case "ADD_TWEET":
             return state.concat(action.payload);
